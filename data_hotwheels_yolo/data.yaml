@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['toycar']
+
+roboflow:
+  workspace: universitatea-politehnica-bucuresti-cawaz
+  project: hotwheels-kfvpf
+  version: 2
+  license: Public Domain
+  url: https://universe.roboflow.com/universitatea-politehnica-bucuresti-cawaz/hotwheels-kfvpf/dataset/2

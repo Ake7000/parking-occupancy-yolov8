@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local settings (the project uses no secrets; precaution)
+.env
+.env.*
+
+# IDE / OS / tools
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Ultralytics outputs and caches
+runs/
+runs_hotwheels/*
+!runs_hotwheels/exp_169/
+runs_hotwheels/exp_169/weights/
+*.cache
+
+# Model weights: only the fine-tuned detector is committed
+# (pretrained COCO weights are downloaded automatically by Ultralytics)
+*.pt
+*.onnx
+!model/best.pt
+
+# Dataset (download it from Roboflow Universe, see README)
+data_hotwheels/
+data_hotwheels_yolo/*
+!data_hotwheels_yolo/data.yaml
+!data_hotwheels_yolo/README.dataset.txt
+*.zip
+
+# Runtime outputs of ROI calibration
+rois.json
+debug_*.png
+*_screenshot_*.png
+
+# Large media and documents
+*.mp4
+*.mov
+*.avi
+*.docx
+*.pdf
